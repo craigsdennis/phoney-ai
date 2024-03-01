@@ -55,7 +55,7 @@ app.post("/handle-transcription", async (c) => {
 });
 
 
-app.all('/parrot', (c) => {
+app.all('/realtime', (c) => {
 	const url = new URL(c.req.url);
 	return c.text(
 		`<Response>
